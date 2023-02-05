@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Meigan Luiz Uliana">
+    <meta name="keywords" content="HTML, CSS3, JAVASCRIPT">
+    <meta name="description" content="Cálculo de vendas de pizzas">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>PIZZA DO MEIGAN</h1></li>
+            <lo><h2>CATEDRAL DO DIVINO RIO GRANDE DO SUL </h2></lo>
+        </ul>
+    </header>
+
+    <section>
+        <form>
+        <h3>Selecione a pizza que foi vendida:</h3>
+            <ul>
+                <li><input name="pizzas" type="radio" id="Mussarela">
+                <label for="Mussarela">Mussarela</label></li>
+
+                <li><input name="pizzas" type="radio" id="Mista">
+                <label for="Mista">Mista</label></li>
+
+                <li><input name="pizzas" type="radio" id="Calabresa">
+                <label for="Calabresa">Calabresa</label></li>
+            </ul>
+        </form>
+    </section>
+    
+    <section>
+        <button id="vendas">Vendas</button>
+        <button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+        <table> 
+            <tr>
+                <th>Sabores</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
+            </tr>
+
+            <tr>
+                <td>Mussarela</td><td><div id="resultadoMussarela"></div></td><td><div id="vendaMussarela"></div></td>
+            </tr>
+
+            <tr>
+                <td>Mista</td><td><div id="resultadoMista"></div></div></td><td><div id="vendaMista"></div></td>
+            </tr>
+
+            <tr>
+                <td>Calabresa</td><td><div id="resultadoCalabresa"></div></td><td><div id="vendaCalabresa"></div></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+
+    <script src="TableToExcel.js"></script>
+    <script src="javascript.js"></script>
+
+</body>
+</html>
+
+
